@@ -27,12 +27,13 @@ a:hover {
 }
 
 body {
+  position: relative;
   margin: 0;
   display: flex;
-  padding: 25px;
+  padding: 25px 25px 0 25px;
   justify-content: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 160vh;
 }
 #root {
   width: 100%;

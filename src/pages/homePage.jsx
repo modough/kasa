@@ -4,7 +4,7 @@ import Banner from "../components/banner"
 import { Fragment } from "react"
 import Cards from "../components/cards"
 
-const Home = () => {
+function Home() {
     return (
         <Fragment>
             <Header />

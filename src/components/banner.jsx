@@ -7,8 +7,6 @@ function Banner() {
         <div className='banner'>
             <img src={img} alt="image de banniere" />
             <p>Chez vous, partout et ailleurs</p>
-
-
         </div>
     )
 }

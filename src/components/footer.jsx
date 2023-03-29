@@ -1,7 +1,7 @@
 import '../styles/footer.css';
 import logoFooter from '../assets/logoFooter.svg';
 
-function footer() {
+function Footer() {
     return (
         <div className='footer'>
             <img src={logoFooter} alt="logo dans le footer" />
@@ -10,4 +10,4 @@ function footer() {
     )
 }
 
-export default footer
+export default Footer
