@@ -1,0 +1,13 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #f7f7f7;
+  border-radius: 25px;
+  gap: 60px;
+  padding: 50px;
+}
+.cards {
+  height: 340px;
+  background: linear-gradient(180deg, #ff6060 0%, #00000080 100%);
+  border-radius: 10px;
+}
