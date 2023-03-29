@@ -1,8 +1,9 @@
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 50px;
   height: 680px;
-  background: #f7f7f7;
+  background: #eceaea;
   border-radius: 25px;
   gap: 60px;
   padding: 50px;
