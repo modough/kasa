@@ -1,19 +1,28 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react';
+import { icon } from '@fortawesome/fontawesome-svg-core';
 
-function CollapseCards({ toggle, Open, title, description }) {
+function CollapseCards({ title, description }) {
+    const [Open, setOpen] = useState(false)
+    const toggleMenu = () => setOpen(!Open)
+
     return (
         <ul className='collapse-container'>
-            <li className='collapse-unit'>
+            <li className='collapse-unit' onClick={toggleMenu}>
                 <span className='collapse-unit-header'>
                     <p>{title}</p>
-                    <FontAwesomeIcon className='icon' onClick={toggle} icon={faChevronDown} />
+                    {Open ?
+                        <FontAwesomeIcon className='icon' icon={faChevronUp} /> :
+                        <FontAwesomeIcon className='icon' icon={faChevronDown} />
+                    }
                 </span>
-                {Open &&
-                    <span >
-                        {description}
-                    </span>}
             </li>
+            {Open &&
+                <span className='collapse-description'>
+                    {description}
+                </span>
+            }
         </ul>
     )
 }

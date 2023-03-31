@@ -1,10 +1,16 @@
+.collapse-section {
+  height: 70%;
+  padding: 0 50px;
+}
 .collapse-container {
   display: flex;
   flex-direction: column;
   gap: 36px;
   padding: 0 200px;
 }
-
+.collapse-unit {
+  cursor: pointer;
+}
 .collapse-unit-header {
   display: flex;
   align-items: center;
@@ -21,4 +27,7 @@
 }
 .collapse-unit-header .icon {
   color: white;
+}
+.collapse-description {
+  color: #ff6060;
 }

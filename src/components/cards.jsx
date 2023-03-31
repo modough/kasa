@@ -1,27 +1,20 @@
 import '../styles/cards.css';
+import mainData from '../data/mainData.json';
 
 function Cards() {
+
     return (
-        <div className='cards-container'>
-            <div className='cards'>
+        <section className='cards-container'>
+            {
+                mainData.map((data) => (
+                    <div className='cards' key={data.id}>
+                        <img src={data.cover} alt={data.title} />
+                        <p>{data.title}</p>
+                    </div>
+                ))
+            }
 
-            </div>
-            <div className='cards'>
-
-            </div>
-            <div className='cards'>
-
-            </div>
-            <div className='cards'>
-
-            </div>
-            <div className='cards'>
-
-            </div>
-            <div className='cards'>
-
-            </div>
-        </div>
+        </section>
     )
 }
 
