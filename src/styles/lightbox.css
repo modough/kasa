@@ -1,0 +1,20 @@
+.lightbox {
+  position: relative;
+  height: 340px;
+  background: linear-gradient(180deg, #ff6060 0%, #00000080 100%);
+  border-radius: 10px;
+  margin: 50px;
+}
+.lightbox .icon {
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  padding: 10px;
+}
+.lightbox .icon.left {
+  top: 35%;
+}
+.lightbox .icon.right {
+  right: 0;
+  top: 35%;
+}

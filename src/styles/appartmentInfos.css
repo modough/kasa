@@ -1,0 +1,15 @@
+.appartmentPage-infos {
+  padding: 0 50px;
+}
+.left-infos {
+  display: flex;
+  flex-direction: column;
+}
+.left-infos .title {
+  font-size: 36px;
+  font-weight: 500;
+}
+.left-infos .location {
+  font-size: 18px;
+  font-weight: 500;
+}

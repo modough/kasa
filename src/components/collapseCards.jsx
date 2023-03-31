@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
-import { icon } from '@fortawesome/fontawesome-svg-core';
+
 
 function CollapseCards({ title, description }) {
     const [Open, setOpen] = useState(false)
