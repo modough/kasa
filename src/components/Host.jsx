@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+
 import { useParams } from 'react-router-dom';
 import mainData from '../data/mainData.json';
 

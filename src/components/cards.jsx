@@ -14,9 +14,7 @@ function Cards() {
                     </Link>
                 ))
             }
-
         </section>
     )
 }
-
 export default Cards

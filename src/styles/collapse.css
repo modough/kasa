@@ -30,4 +30,9 @@
 }
 .collapse-description {
   color: #ff6060;
+  font-size: 18px;
+}
+.collapse-description li {
+  font-size: 18px;
+  font-weight: 400;
 }

@@ -4,8 +4,13 @@ import { Fragment } from 'react';
 import Ratings from './ratings';
 import Host from './Host';
 import Infos from './Infos';
+import { useParams } from 'react-router-dom';
+import mainData from '../data/mainData.json';
 
 function AppartmentInfos() {
+    const { id } = useParams();
+    const findAppart = mainData.find((appart) => appart.id === id);
+
     return (
         <Fragment>
             <section className='upper-infos'>
@@ -18,8 +23,8 @@ function AppartmentInfos() {
                 </div>
             </section>
             <section className='collapseCards'>
-                <CollapseCards title="Description" description="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). " />
-                <CollapseCards title="Equipements" />
+                <CollapseCards title="Description" description={findAppart.description} />
+                <CollapseCards title="Equipements" description={findAppart.equipments.map((equipment, i) => <li key={i} >{equipment}</li>)} />
             </section>
         </Fragment>
     )

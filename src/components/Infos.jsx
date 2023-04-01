@@ -4,24 +4,15 @@ import mainData from '../data/mainData.json';
 function Infos() {
     const { id } = useParams();
     const findAppart = mainData.find((appart) => appart.id === id);
-
+    console.log(parseInt(findAppart.rating))
     return (
-
-
         <section key={findAppart.id}>
             <h2 className='title'>{findAppart.title}</h2>
             <p className='location'>{findAppart.location}</p>
             <ul className='tags'>
-
                 {findAppart.tags.map((tag, i) => <li key={i}>{tag}</li>)}
-
-
-
-
             </ul>
         </section>
-
-
     )
 }
 
