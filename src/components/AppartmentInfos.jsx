@@ -1,35 +1,27 @@
 import '../styles/appartmentInfos.css';
+import CollapseCards from './collapseCards';
+import { Fragment } from 'react';
+import Ratings from './ratings';
+import Host from './Host';
+import Infos from './Infos';
 
 function AppartmentInfos() {
     return (
-        <section className="appartmentPage-infos">
-            <div className='left-infos'>
-                <p className='title'>title</p>
-                <p className='location'>city</p>
-                <ul className='tags'>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div className='right-infos'>
-                <p className='host-name'>name</p>
-                <img src="" alt="image de l'hôte" />
-                <span className='ratings'>stars</span>
-            </div>
-            <div className='description'>
-                <p>description</p>
-                <span>text</span>
-            </div>
-            <div className='equipements'>
-                <p>Equipements</p>
-                <ul className='equipements-list'>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </section>
+        <Fragment>
+            <section className='upper-infos'>
+                <div className='left-infos'>
+                    <Infos />
+                </div>
+                <div className='right-infos'>
+                    <Host />
+                    <Ratings />
+                </div>
+            </section>
+            <section className='collapseCards'>
+                <CollapseCards title="Description" description="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). " />
+                <CollapseCards title="Equipements" />
+            </section>
+        </Fragment>
     )
 }
 

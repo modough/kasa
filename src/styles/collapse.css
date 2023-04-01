@@ -1,12 +1,12 @@
 .collapse-section {
-  height: 70%;
   padding: 0 50px;
 }
 .collapse-container {
   display: flex;
   flex-direction: column;
   gap: 36px;
-  padding: 0 200px;
+  padding: 0;
+  width: 100%;
 }
 .collapse-unit {
   cursor: pointer;

@@ -16,6 +16,7 @@
 }
 * {
   font-family: "Montserrat", sans-serif;
+  box-sizing: content-box;
 }
 a {
   font-weight: 500;
@@ -33,7 +34,6 @@ body {
   padding-top: 50px;
   justify-content: center;
   min-width: 320px;
-  min-height: 160vh;
 }
 #root {
   width: 100%;

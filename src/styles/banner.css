@@ -11,6 +11,8 @@
   filter: brightness(50%);
 }
 .banner p {
+  display: flex;
+  align-items: center;
   color: white;
   top: 25%;
   left: 35%;

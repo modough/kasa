@@ -12,19 +12,28 @@
   flex-direction: column;
   justify-content: space-between;
   height: 340px;
-  background: linear-gradient(180deg, #ff6060 0%, #00000080 100%);
+
   border-radius: 10px;
+  position: relative;
+  cursor: pointer;
 }
+
 .cards p {
   color: white;
   font-size: 18px;
   font-weight: 500;
   padding: 20px;
   margin: 0;
+  position: absolute;
+  bottom: 0;
 }
 .cards img {
   object-fit: cover;
   width: 100%;
-  height: 70%;
-  border-radius: 10px 10px 0 0;
+  height: 100%;
+  border-radius: 10px;
+  filter: brightness(50%);
+}
+.cards img:hover {
+  filter: brightness(100%);
 }
