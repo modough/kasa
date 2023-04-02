@@ -1,17 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { useParams } from 'react-router-dom';
-import mainData from '../data/mainData.json';
+import '../styles/rating.css';
 
-function Ratings() {
-    const { id } = useParams();
-    const findAppart = mainData.find((appart) => appart.id === id);
+function Ratings({ findAppart }) {
 
     return (
         <span className='ratings'>
-            {new Array(findAppart.rating).fill(null).map(() => (
-                <FontAwesomeIcon className='ratingStar' icon={faStar} />
-            ))}
+
+            {new Array(parseInt(findAppart.rating)).fill(0).map((i) => {
+                return i < 5 ?
+                    <FontAwesomeIcon key={i++} className='ratingStarOrange' icon={faStar} /> :
+                    <FontAwesomeIcon key={i++} className='ratingStar' icon={faStar} />
+            }
+            )}
 
         </span>
     )

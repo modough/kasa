@@ -15,11 +15,11 @@ function AppartmentInfos() {
         <Fragment>
             <section className='upper-infos'>
                 <div className='left-infos'>
-                    <Infos />
+                    <Infos findAppart={findAppart} />
                 </div>
                 <div className='right-infos'>
-                    <Host />
-                    <Ratings />
+                    <Host findAppart={findAppart} />
+                    <Ratings findAppart={findAppart} />
                 </div>
             </section>
             <section className='collapseCards'>

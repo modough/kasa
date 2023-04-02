@@ -1,5 +1,6 @@
 .collapse-section {
   padding: 0 50px;
+  height: 500px;
 }
 .collapse-container {
   display: flex;

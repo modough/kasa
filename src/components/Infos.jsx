@@ -1,10 +1,6 @@
-import { Fragment } from 'react'
-import { useParams } from 'react-router-dom';
-import mainData from '../data/mainData.json';
-function Infos() {
-    const { id } = useParams();
-    const findAppart = mainData.find((appart) => appart.id === id);
-    console.log(parseInt(findAppart.rating))
+
+function Infos({ findAppart }) {
+
     return (
         <section key={findAppart.id}>
             <h2 className='title'>{findAppart.title}</h2>

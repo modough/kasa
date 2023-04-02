@@ -1,7 +1,7 @@
-import { useRouteError } from "react-router-dom";
-import '../styles/errorPage.css';
-import { Link } from "react-router-dom";
-import Header from "../components/header";
+import { useRouteError, Link } from "react-router-dom";
+import '../../styles/errorPage.css';
+
+import Header from "../../components/header";
 import { Fragment } from "react";
 
 export default function ErrorPage() {

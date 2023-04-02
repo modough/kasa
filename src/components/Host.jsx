@@ -1,11 +1,6 @@
 
-import { useParams } from 'react-router-dom';
-import mainData from '../data/mainData.json';
+function Host({ findAppart }) {
 
-function Host() {
-    const { id } = useParams();
-
-    const findAppart = mainData.find((appart) => appart.id === id);
 
 
     return (
