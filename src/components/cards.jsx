@@ -8,7 +8,7 @@ function Cards() {
         <section className='cards-container'>
             {
                 mainData.map((data) => (
-                    <Link to={`/${data.id}`} className='cards' key={data.id}>
+                    <Link to={`/housings/${data.id}`} className='cards' key={data.id}>
                         <img src={data.cover} alt={data.title} />
                         <p>{data.title}</p>
                     </Link>

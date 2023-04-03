@@ -22,7 +22,7 @@ function AppartmentInfos() {
                     <Ratings findAppart={findAppart} />
                 </div>
             </section>
-            <section className='collapseCards'>
+            <section className='collapse-section housing'>
                 <CollapseCards title="Description" description={findAppart.description} />
                 <CollapseCards title="Equipements" description={findAppart.equipments.map((equipment, i) => <li key={i} >{equipment}</li>)} />
             </section>

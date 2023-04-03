@@ -8,8 +8,8 @@ function CollapseCards({ title, description }) {
     const toggleMenu = () => setOpen(!Open)
 
     return (
-        <ul className='collapse-container'>
-            <li className='collapse-unit' onClick={toggleMenu}>
+        <section className='collapse-container'>
+            <div className='collapse-unit' onClick={toggleMenu}>
                 <span className='collapse-unit-header'>
                     <p>{title}</p>
                     {Open ?
@@ -17,13 +17,15 @@ function CollapseCards({ title, description }) {
                         <FontAwesomeIcon className='icon' icon={faChevronDown} />
                     }
                 </span>
-            </li>
+            </div>
             {Open &&
-                <span className='collapse-description'>
-                    {description}
-                </span>
+                <div class="collapse-description-container">
+                    <span className='collapse-description'>
+                        {description}
+                    </span>
+                </div>
             }
-        </ul>
+        </section>
     )
 }
 

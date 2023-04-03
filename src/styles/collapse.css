@@ -1,11 +1,18 @@
-.collapse-section {
+.collapse-section.housing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
   padding: 0 50px;
-  height: 500px;
 }
-.collapse-container {
+.collapse-section.about {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 50px;
+  padding: 50px;
+  height: 550px;
+}
+.collapse-container {
   padding: 0;
   width: 100%;
 }
@@ -19,6 +26,7 @@
   background-color: #ff6060;
   padding: 0 15px;
   border-radius: 5px;
+  width: 100%;
 }
 .collapse-unit-header p {
   font-size: 24px;
@@ -28,6 +36,10 @@
 }
 .collapse-unit-header .icon {
   color: white;
+}
+.collapse-description-container {
+  padding: 20px;
+  background: #f7f7f7;
 }
 .collapse-description {
   color: #ff6060;
