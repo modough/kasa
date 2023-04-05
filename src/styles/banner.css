@@ -15,7 +15,7 @@
   align-items: center;
   color: white;
   top: 25%;
-  left: 35%;
+  left: 30%;
   position: absolute;
   font-size: 48px;
   font-weight: 500;
@@ -29,5 +29,26 @@
   .banner p {
     font-size: 28px;
     top: 100px;
+  }
+}
+
+@media (width<=912px) {
+  .banner {
+    width: 778px;
+  }
+}
+@media (width <= 393px) {
+  .banner {
+    padding: 20px;
+  }
+  .banner img {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .banner p {
+    font-size: 24px;
+    top: 15px;
+    left: 40px;
+    width: 217px;
   }
 }

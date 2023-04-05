@@ -13,3 +13,18 @@
   font-weight: 500;
   font-size: 24px;
 }
+
+@media (width <= 912px) {
+  .footer {
+    width: 779px;
+  }
+}
+@media (width <= 393px) {
+  .footer {
+    height: 100%;
+    padding: 20px;
+  }
+  .footer p {
+    font-size: 20px;
+  }
+}

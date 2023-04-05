@@ -1,17 +1,17 @@
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Banner from "../components/banner"
-import { Fragment } from "react"
+import '../styles/homePage.css'
 import Cards from "../components/cards"
 
 function Home() {
     return (
-        <Fragment>
-            <Header />
+        <section className="homePage">
+            <Header classTypeHome={'home'} />
             <Banner />
             <Cards />
             <Footer />
-        </Fragment>
+        </section>
     )
 }
 export default Home

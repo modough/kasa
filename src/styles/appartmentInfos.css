@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 50px;
 }
 .left-infos {
   display: flex;
@@ -51,4 +51,61 @@
   align-items: center;
   gap: 100px;
   padding: 0 50px;
+}
+
+@media (width <= 912px) {
+  .upper-infos {
+    padding: 10px 50px;
+    width: 765px;
+  }
+}
+@media (width <= 393px) {
+  .upper-infos {
+    flex-direction: column;
+    padding: 20px;
+    width: 715px;
+  }
+  .left-infos {
+    width: 100%;
+  }
+  .left-infos .title {
+    font-size: 20px;
+  }
+  .left-infos .location {
+    font-size: 14px;
+  }
+  .left-infos .tags {
+    gap: 10px;
+    height: 18px;
+    align-items: center;
+  }
+  .left-infos .tags li {
+    font-size: 10px;
+    border-radius: 5px;
+  }
+  .right-infos {
+    width: 100%;
+    flex-direction: row-reverse;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .host-name {
+    font-size: 12px;
+  }
+  .host-details img {
+    width: 32px;
+    height: 32px;
+  }
+  .collapse-section.housing {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .collapse-unit-header {
+    height: 30px;
+  }
+  .collapse-unit-header p {
+    font-size: 13px;
+  }
 }

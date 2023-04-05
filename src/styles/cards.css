@@ -12,7 +12,6 @@
   flex-direction: column;
   justify-content: space-between;
   height: 340px;
-
   border-radius: 10px;
   position: relative;
   cursor: pointer;
@@ -36,4 +35,22 @@
 }
 .cards img:hover {
   filter: brightness(100%);
+}
+
+@media (width <= 912px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+    width: 680px;
+  }
+}
+@media (width <= 393px) {
+  .cards-container {
+    margin: 0 20px;
+    border-radius: 10px;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .cards-container .cards {
+    height: 255px;
+  }
 }

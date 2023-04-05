@@ -1,4 +1,4 @@
-.lightbox {
+.lightbox-container {
   position: relative;
   height: 340px;
   background: linear-gradient(180deg, #ff6060 0%, #00000080 100%);
@@ -18,4 +18,42 @@
 .lightbox .icon.right {
   right: 0;
   top: 35%;
+}
+.lightbox-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 340px;
+  border-radius: 10px;
+}
+.lightbox-image-number {
+  color: #00000080;
+  font-weight: 600;
+  position: absolute;
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  bottom: 10px;
+  left: 50%;
+}
+
+@media (width <= 912px) {
+  .lightbox-container {
+    width: 675px;
+  }
+}
+
+@media (width <= 393px) {
+  .lightbox-container {
+    margin: 20px;
+    height: 255px;
+  }
+  .lightbox-image img {
+    height: 255px;
+  }
+  .lightbox-image-number {
+    left: 45%;
+  }
+  .lightbox .icon {
+    height: 30px;
+  }
 }

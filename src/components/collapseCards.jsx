@@ -19,7 +19,7 @@ function CollapseCards({ title, description }) {
                 </span>
             </div>
             {Open &&
-                <div class="collapse-description-container">
+                <div className="collapse-description-container">
                     <span className='collapse-description'>
                         {description}
                     </span>

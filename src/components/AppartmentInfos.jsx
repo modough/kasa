@@ -4,12 +4,10 @@ import { Fragment } from 'react';
 import Ratings from './ratings';
 import Host from './Host';
 import Infos from './Infos';
-import { useParams } from 'react-router-dom';
-import mainData from '../data/mainData.json';
 
-function AppartmentInfos() {
-    const { id } = useParams();
-    const findAppart = mainData.find((appart) => appart.id === id);
+
+function AppartmentInfos({ findAppart }) {
+
 
     return (
         <Fragment>
