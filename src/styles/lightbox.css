@@ -26,24 +26,25 @@
   border-radius: 10px;
 }
 .lightbox-image-number {
-  color: #00000080;
-  font-weight: 600;
+  color: white;
+  font-weight: 500;
   position: absolute;
-  background-color: white;
+  font-size: 24px;
   padding: 2px 5px;
   border-radius: 5px;
-  bottom: 10px;
+  bottom: 0;
   left: 50%;
 }
 
-@media (width <= 912px) {
-  .lightbox-container {
-    width: 675px;
+@media (width <= 527) {
+  .lightbox .icon {
+    font-size: 30px;
   }
 }
 
 @media (width <= 393px) {
   .lightbox-container {
+    width: auto;
     margin: 20px;
     height: 255px;
   }

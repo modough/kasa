@@ -7,14 +7,14 @@ const Header = ({ classTypeAbout, classTypeHome }) => {
         <div className="header">
             <img src={logo} alt="logo du site" />
             <nav className="navigation">
-                <ul>
-                    <Link to='/' className={`${'navLink'}-${classTypeHome}`}>
-                        <li>Accueil</li>
-                    </Link>
-                    <Link to='/about' className={`${'navLink'}-${classTypeAbout}`} >
-                        <li>A propos</li>
-                    </Link>
-                </ul>
+
+                <Link to='/' className={`${'navLink'}-${classTypeHome}`}>
+                    <p>Accueil</p>
+                </Link>
+                <Link to='/about' className={`${'navLink'}-${classTypeAbout}`} >
+                    <p>A propos</p>
+                </Link>
+
             </nav>
         </div>
     )

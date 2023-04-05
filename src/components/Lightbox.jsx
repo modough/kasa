@@ -18,10 +18,11 @@ function Lightbox({ findAppart }) {
         const nextImage = images.filter((elmt) => {
             return images.indexOf(elmt) === currentIndex + 1;
         })
-        console.log(nextImage)
+        console.log(nextImage[0])
         setCurrentIndex(currentIndex + 1);
         setClicked(nextImage[0]);
     }
+
     const scrollLightboxImagesLeft = () => {
         if (currentIndex === 0) {
             setCurrentIndex(imageArrayLength - 1);
@@ -32,7 +33,7 @@ function Lightbox({ findAppart }) {
         const prevImage = images.filter((elmt) => {
             return images.indexOf(elmt) === currentIndex - 1;
         })
-        console.log(prevImage)
+        console.log(prevImage[0])
         setCurrentIndex(currentIndex - 1);
         setClicked(prevImage[0]);
     }

@@ -37,12 +37,21 @@
   filter: brightness(100%);
 }
 
+/***************TABLETS****************/
+
 @media (width <= 912px) {
   .cards-container {
     grid-template-columns: 1fr 1fr;
-    width: 680px;
+    gap: 20px;
+    padding: 20px;
+  }
+  .cards {
+    height: 215px;
   }
 }
+
+/***************MOBILE****************/
+
 @media (width <= 393px) {
   .cards-container {
     margin: 0 20px;

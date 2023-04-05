@@ -6,7 +6,7 @@ function Ratings({ findAppart }) {
 
     const stars = [];
 
-    for (let i = 0; i < 5; i++) {
+    for (let i in findAppart.rating) {
         if (i < findAppart.rating) {
             stars.push(<FontAwesomeIcon key={i} className='ratingStarOrange' icon={faStar} />)
         }

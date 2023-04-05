@@ -50,12 +50,13 @@
 }
 
 @media (width<=912px) {
-  .collapse-section.about {
-    width: 779px;
-  }
+}
+
+@media (width <= 527px) {
   .collapse-section.housing {
-    padding: 50px;
-    width: 779px;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 50px;
   }
 }
 
@@ -66,9 +67,9 @@
   .collapse-section.about {
     padding: 20px;
     gap: 20px;
-    width: 715px;
+    width: auto;
   }
   .collapse-section.housing {
-    width: 715px;
+    width: auto;
   }
 }

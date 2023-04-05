@@ -12,11 +12,13 @@
 }
 
 @media (width <= 912px) {
-  .bannerAboutPage {
-    width: 779px;
-  }
   .bannerAboutPage img {
     height: 495px;
+  }
+}
+@media (width <= 527px) {
+  .bannerAboutPage img {
+    height: 230px;
   }
 }
 
