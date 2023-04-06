@@ -11,5 +11,4 @@ function Infos({ findAppart }) {
         </section>
     )
 }
-
 export default Infos

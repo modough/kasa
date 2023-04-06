@@ -4,21 +4,23 @@ import { useState } from 'react';
 
 
 function CollapseCards({ title, description }) {
-    const [Open, setOpen] = useState(false)
-    const toggleMenu = () => setOpen(!Open)
+    const [isOpen, setIsOpen] = useState(false)
+    const toggleMenu = () => setIsOpen(!isOpen)
 
     return (
         <section className='collapse-container'>
             <div className='collapse-unit' onClick={toggleMenu}>
                 <span className='collapse-unit-header'>
                     <p>{title}</p>
-                    {Open ?
-                        <FontAwesomeIcon className='icon' icon={faChevronUp} /> :
-                        <FontAwesomeIcon className='icon' icon={faChevronDown} />
+                    {
+                        isOpen ?
+                            <FontAwesomeIcon className='icon' icon={faChevronUp} /> :
+                            <FontAwesomeIcon className='icon' icon={faChevronDown} />
                     }
                 </span>
             </div>
-            {Open &&
+            {
+                isOpen &&
                 <div className="collapse-description-container">
                     <span className='collapse-description'>
                         {description}

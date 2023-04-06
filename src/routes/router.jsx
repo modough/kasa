@@ -17,8 +17,12 @@ export const Router = createBrowserRouter([
     },
     {
         path: "/housings/:id",
+        type: "exact",
         element: <AppartmentPage />,
         errorElement: <ErrorPage />
+    },
+    {
+        path: "/housings/:*",
+        element: <ErrorPage />
     }
-
 ]);

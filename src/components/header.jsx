@@ -1,20 +1,22 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import '../styles/header.css';
+import { navLinks } from './Helpers';
 
-const Header = ({ classTypeAbout, classTypeHome }) => {
+const Header = () => {
+    const path = typeof window !== 'undefined' && window.location.pathname;
+    console.log(path)
     return (
         <div className="header">
             <img src={logo} alt="logo du site" />
             <nav className="navigation">
-
-                <Link to='/' className={`${'navLink'}-${classTypeHome}`}>
-                    <p>Accueil</p>
-                </Link>
-                <Link to='/about' className={`${'navLink'}-${classTypeAbout}`} >
-                    <p>A propos</p>
-                </Link>
-
+                {
+                    navLinks.map((link) =>
+                        <Link to={link.path} className={`${'navLink'} ${path === link.path ? 'underline' : ''}`} key={link.name}>
+                            <p>{link.name}</p>
+                        </Link>
+                    )
+                }
             </nav>
         </div>
     )
