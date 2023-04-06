@@ -19,7 +19,9 @@ a {
 
   text-decoration: inherit;
 }
-
+li {
+  list-style: none;
+}
 body {
   position: relative;
   margin: 0;
@@ -62,6 +64,7 @@ button:focus-visible {
 @media (width <= 393px) {
   body {
     width: 700px;
+    min-height: 3500px;
     padding-top: 0;
   }
   #root {

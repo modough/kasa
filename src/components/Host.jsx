@@ -1,8 +1,4 @@
-
 function Host({ findAppart }) {
-
-
-
     return (
         <div className='host-details'>
             <p className='host-name'>{findAppart.host.name}</p>
@@ -10,5 +6,4 @@ function Host({ findAppart }) {
         </div>
     )
 }
-
 export default Host

@@ -1,9 +1,7 @@
-
-import BannerAboutPage from "../components/bannerAboutPAge"
-import Collapse from "../components/collapse"
-import Footer from "../components/footer"
-import Header from '../components/header'
-import '../styles/aboutPage.css'
+import BannerAboutPage from "../components/bannerAboutPAge";
+import Collapse from "../components/collapse";
+import Footer from "../components/Footer";
+import Header from '../components/Header';
 
 function AboutPage() {
     return (

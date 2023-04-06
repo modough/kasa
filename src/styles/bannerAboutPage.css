@@ -10,13 +10,20 @@
   border-radius: 25px;
   filter: brightness(50%);
 }
-
+@media (width<=1000px) {
+  .bannerAboutPage {
+    padding: 50px 20px;
+  }
+}
 @media (width <= 912px) {
   .bannerAboutPage img {
     height: 495px;
   }
 }
 @media (width <= 527px) {
+  .bannerAboutPage {
+    padding: 50px 20px;
+  }
   .bannerAboutPage img {
     height: 230px;
   }
@@ -27,6 +34,6 @@
     padding: 20px;
   }
   .bannerAboutPage img {
-    height: 295px;
+    height: 400px;
   }
 }

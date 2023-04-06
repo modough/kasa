@@ -1,5 +1,5 @@
 import '../styles/collapse.css';
-import CollapseCards from './collapseCards';
+import CollapseCards from './CollapseCards';
 
 function Collapse() {
     return (

@@ -1,5 +1,5 @@
 import '../styles/appartmentInfos.css';
-import CollapseCards from './collapseCards';
+import CollapseCards from './CollapseCards';
 import { Fragment } from 'react';
 import Ratings from './ratings';
 import Host from './Host';

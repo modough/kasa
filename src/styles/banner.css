@@ -21,19 +21,26 @@
   font-weight: 500;
 }
 
-@media (width <= 912px) {
+@media (width <= 1200px) {
   .banner p {
-    font-size: 40px;
-  }
-}
-@media (width <= 680px) {
-  .banner p {
-    font-size: 25px;
-    left: 20%;
+    font-size: 35px;
     top: 30%;
+    left: 30%;
   }
 }
-@media (width <= 393px) {
+@media (width<=1000px) {
+  .banner {
+    padding: 50px 20px;
+  }
+}
+@media (width <= 800px) {
+  .banner p {
+    font-size: 30px;
+    left: 25%;
+    top: 35%;
+  }
+}
+@media (width <= 630px) {
   .banner {
     padding: 20px;
   }
