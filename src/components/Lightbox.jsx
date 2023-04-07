@@ -55,5 +55,4 @@ function Lightbox({ findApart }) {
         </section>
     )
 }
-
 export default Lightbox

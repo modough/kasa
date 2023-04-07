@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 
-
 function CollapseCards({ title, description }) {
     const [isOpen, setIsOpen] = useState(false)
     const toggleMenu = () => setIsOpen(!isOpen)
@@ -30,5 +29,4 @@ function CollapseCards({ title, description }) {
         </section>
     )
 }
-
 export default CollapseCards

@@ -1,4 +1,3 @@
-
 function Infos({ findApart }) {
 
     return (

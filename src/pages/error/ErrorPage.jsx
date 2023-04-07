@@ -1,10 +1,9 @@
 import { useRouteError, Link } from "react-router-dom";
 import '../../styles/errorPage.css';
-
 import Header from "../../components/Header";
 import { Fragment } from "react";
 
-export default function ErrorPage() {
+function ErrorPage() {
     const error = useRouteError();
     console.error(error);
 
@@ -21,3 +20,4 @@ export default function ErrorPage() {
         </Fragment>
     );
 }
+export default ErrorPage

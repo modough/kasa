@@ -1,4 +1,3 @@
-
 import img from '../assets/IMG.png'
 import '../styles/banner.css'
 
@@ -10,5 +9,4 @@ function Banner() {
         </div>
     )
 }
-
 export default Banner

@@ -5,10 +5,7 @@ import Ratings from './ratings';
 import Host from './Host';
 import Infos from './Infos';
 
-
 function ApartmentInfos({ findApart }) {
-
-
     return (
         <Fragment>
             <section className='upper-infos'>
@@ -27,5 +24,4 @@ function ApartmentInfos({ findApart }) {
         </Fragment>
     )
 }
-
 export default ApartmentInfos

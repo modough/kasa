@@ -1,4 +1,3 @@
-
 import img from '../assets/bannerAboutIMG.png';
 import '../styles/bannerAboutPage.css'
 
@@ -9,5 +8,4 @@ function BannerAboutPage() {
         </div>
     )
 }
-
 export default BannerAboutPage
