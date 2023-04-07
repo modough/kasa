@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom'
 import AboutPage from '../pages/AboutPage';
-import AppartmentPage from '../pages/AppartmentPage';
-import Home from '../pages/homePage';
+import ApartmentPage from '../pages/ApartmentPage';
+import Home from '../pages/hHomePage';
 import ErrorPage from '../pages/error/ErrorPage';
 
 export const Router = createBrowserRouter([
@@ -18,7 +18,7 @@ export const Router = createBrowserRouter([
     {
         path: "/housings/:id",
         type: "exact",
-        element: <AppartmentPage />,
+        element: <ApartmentPage />,
         errorElement: <ErrorPage />
     },
     {

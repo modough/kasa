@@ -2,12 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import '../styles/rating.css';
 
-function Ratings({ findAppart }) {
+function Ratings({ findApart }) {
 
     const stars = [];
 
     for (let i = 0; i < 5; i++) {
-        if (i < findAppart.rating) {
+        if (i < findApart.rating) {
             stars.push(<FontAwesomeIcon key={i} className='ratingStarOrange' icon={faStar} />)
         }
         else {

@@ -1,12 +1,12 @@
 
-function Infos({ findAppart }) {
+function Infos({ findApart }) {
 
     return (
-        <section key={findAppart.id}>
-            <h2 className='title'>{findAppart.title}</h2>
-            <p className='location'>{findAppart.location}</p>
+        <section key={findApart.id}>
+            <h2 className='title'>{findApart.title}</h2>
+            <p className='location'>{findApart.location}</p>
             <ul className='tags'>
-                {findAppart.tags.map((tag, i) => <li key={i}>{tag}</li>)}
+                {findApart.tags.map((tag, i) => <li key={i}>{tag}</li>)}
             </ul>
         </section>
     )

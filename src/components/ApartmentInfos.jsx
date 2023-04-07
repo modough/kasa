@@ -1,4 +1,4 @@
-import '../styles/appartmentInfos.css';
+import '../styles/apartmentInfos.css';
 import CollapseCards from './CollapseCards';
 import { Fragment } from 'react';
 import Ratings from './ratings';
@@ -6,26 +6,26 @@ import Host from './Host';
 import Infos from './Infos';
 
 
-function AppartmentInfos({ findAppart }) {
+function ApartmentInfos({ findApart }) {
 
 
     return (
         <Fragment>
             <section className='upper-infos'>
                 <div className='left-infos'>
-                    <Infos findAppart={findAppart} />
+                    <Infos findApart={findApart} />
                 </div>
                 <div className='right-infos'>
-                    <Host findAppart={findAppart} />
-                    <Ratings findAppart={findAppart} />
+                    <Host findApart={findApart} />
+                    <Ratings findApart={findApart} />
                 </div>
             </section>
             <section className='collapse-section housing'>
-                <CollapseCards title="Description" description={findAppart.description} />
-                <CollapseCards title="Equipements" description={findAppart.equipments.map((equipment, i) => <li key={i} >{equipment}</li>)} />
+                <CollapseCards title="Description" description={findApart.description} />
+                <CollapseCards title="Equipements" description={findApart.equipments.map((equipment, i) => <li key={i} >{equipment}</li>)} />
             </section>
         </Fragment>
     )
 }
 
-export default AppartmentInfos
+export default ApartmentInfos

@@ -1,8 +1,9 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Banner from "../components/Banner"
-import Cards from "../components/Cards"
 import Layout from "../components/Layout"
+import Cards from "../components/Cards"
+
 
 function Home() {
     return (

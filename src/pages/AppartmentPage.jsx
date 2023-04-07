@@ -1,23 +1,21 @@
 
 import Lightbox from '../components/Lightbox';
-import AppartmentInfos from '../components/AppartmentInfos';
+import ApartmentInfos from '../components/ApartmentInfos';
 import { useParams } from 'react-router-dom';
 import mainData from '../data/mainData.json';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Layout from '../components/Layout';
 
-function AppartmentPage() {
+function ApartmentPage() {
     const { id } = useParams();
-    const findAppart = mainData.find((appart) => appart.id === id);
+    const findApart = mainData.find((apart) => apart.id === id);
 
     return (
-        <section className="appartmentPage">
+        <section className="apartmentPage">
             <Layout>
-                <Lightbox findAppart={findAppart} />
-                <AppartmentInfos findAppart={findAppart} />
+                <Lightbox findApart={findApart} />
+                <ApartmentInfos findApart={findApart} />
             </Layout>
         </section>
     )
 }
-export default AppartmentPage
+export default ApartmentPage

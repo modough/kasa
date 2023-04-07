@@ -3,9 +3,9 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import '../styles/lightbox.css';
 import { Fragment, useState } from 'react';
 
-function Lightbox({ findAppart }) {
-    const images = findAppart.pictures;
-    const imageArrayLength = findAppart.pictures.length;
+function Lightbox({ findApart }) {
+    const images = findApart.pictures;
+    const imageArrayLength = findApart.pictures.length;
     const [clicked, setClicked] = useState(images[0]);
     const [currentIndex, setCurrentIndex] = useState(0);
 

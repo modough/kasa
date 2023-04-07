@@ -1,8 +1,8 @@
-function Host({ findAppart }) {
+function Host({ findApart }) {
     return (
         <div className='host-details'>
-            <p className='host-name'>{findAppart.host.name}</p>
-            <img src={findAppart.host.picture} alt="image de l'hôte" />
+            <p className='host-name'>{findApart.host.name}</p>
+            <img src={findApart.host.picture} alt="image de l'hôte" />
         </div>
     )
 }

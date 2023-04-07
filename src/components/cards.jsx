@@ -3,7 +3,6 @@ import mainData from '../data/mainData.json';
 import { Link } from 'react-router-dom';
 
 function Cards() {
-
     return (
         <section className='cards-container'>
             {
