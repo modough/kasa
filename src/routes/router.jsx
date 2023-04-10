@@ -22,7 +22,7 @@ export const Router = createBrowserRouter([
         errorElement: <ErrorPage />
     },
     {
-        path: "/housings/:*",
+        path: "/housings/:/*",
         element: <ErrorPage />
     }
 ]);
