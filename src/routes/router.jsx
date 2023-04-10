@@ -4,7 +4,7 @@ import ApartmentPage from '../pages/ApartmentPage';
 import Home from '../pages/HomePage';
 import ErrorPage from '../pages/error/ErrorPage';
 
-export const Router = createBrowserRouter([
+const Router = createBrowserRouter([
     {
         path: "/",
         element: <Home />,
@@ -26,3 +26,4 @@ export const Router = createBrowserRouter([
         element: <ErrorPage />
     }
 ]);
+export default Router
