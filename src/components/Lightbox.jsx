@@ -41,7 +41,7 @@ function Lightbox({ findApart }) {
         <section className="lightbox-container">
             <div className="lightbox">
                 <div className="lightbox-image">
-                    <img src={clicked} alt="lightbox image" />
+                    <img src={clicked} alt="lightbox image" tabIndex={0} aria-current="media de caroussel" />
                 </div>
                 {
                     imageArrayLength > 1 ?

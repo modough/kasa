@@ -4,7 +4,7 @@ import '../styles/bannerAboutPage.css'
 function BannerAboutPage() {
     return (
         <div className='bannerAboutPage'>
-            <img src={img} alt="image de banniere" />
+            <img src={img} value='img' alt="image de banniere" />
         </div>
     )
 }

@@ -5,7 +5,7 @@ function Infos({ findApart }) {
             <h2 className='title'>{findApart.title}</h2>
             <p className='location'>{findApart.location}</p>
             <ul className='tags'>
-                {findApart.tags.map((tag, i) => <li key={i}>{tag}</li>)}
+                {findApart.tags.map((tag, i) => <li key={tag[i]}>{tag}</li>)}
             </ul>
         </section>
     )

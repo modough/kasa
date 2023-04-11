@@ -8,7 +8,7 @@ function CollapseCards({ title, description }) {
 
     return (
         <section className='collapse-container'>
-            <div className='collapse-unit' onClick={toggleMenu}>
+            <div className='collapse-unit' onClick={toggleMenu} role='button'>
                 <span className='collapse-unit-header'>
                     <p>{title}</p>
                     {

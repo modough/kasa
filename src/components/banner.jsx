@@ -4,7 +4,7 @@ import '../styles/banner.css'
 function Banner() {
     return (
         <div className='banner'>
-            <img src={img} alt="image de banniere" />
+            <img src={img} alt="image de banniere" value='img' />
             <p>Chez vous, partout et ailleurs</p>
         </div>
     )

@@ -19,7 +19,7 @@ function ApartmentInfos({ findApart }) {
             </section>
             <section className='collapse-section housing'>
                 <CollapseCards title="Description" description={findApart.description} />
-                <CollapseCards title="Equipements" description={findApart.equipments.map((equipment, i) => <li key={i} >{equipment}</li>)} />
+                <CollapseCards title="Equipements" description={findApart.equipments.map((equipment, i) => <li key={equipment[i]}>{equipment}</li>)} />
             </section>
         </Fragment>
     )
