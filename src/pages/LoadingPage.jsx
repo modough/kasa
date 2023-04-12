@@ -4,7 +4,7 @@ import LoaderImg from '../assets/loader.svg'
 function LoadingPage() {
     return (
         <section className='loadingPage'>
-            <section class="loadingBackground">
+            <section className="loadingBackground">
                 <img src={LoaderImg} alt='loader image' />
             </section>
         </section>
