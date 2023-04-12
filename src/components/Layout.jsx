@@ -9,7 +9,7 @@ function Layout({ children }) {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(!isLoading)
-        }, 1000);
+        }, 900);
         return () => clearTimeout(timer);
     }, [])
 
