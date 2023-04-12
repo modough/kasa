@@ -1,7 +1,7 @@
 import '../styles/loadingPage.css';
 import LoaderImg from '../assets/loader.svg'
 
-function LoadingPage() {
+function Loading() {
     return (
         <section className='loadingPage'>
             <section className="loadingBackground">
@@ -11,4 +11,4 @@ function LoadingPage() {
     )
 }
 
-export default LoadingPage
+export default Loading
