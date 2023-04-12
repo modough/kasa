@@ -1,6 +1,6 @@
 import '../styles/collapse.css';
 import CollapseCards from './CollapseCards';
-import { collapseDataAbout } from './Helpers';
+import { collapseDataAbout } from '../utils/helpers';
 
 function Collapse() {
     return (

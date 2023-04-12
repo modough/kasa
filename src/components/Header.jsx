@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import '../styles/header.css';
-import { navLinks } from './Helpers';
+import { navLinks } from '../utils/helpers';
 
 const Header = () => {
     const path = typeof window !== 'undefined' && window.location.pathname;
