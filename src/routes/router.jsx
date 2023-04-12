@@ -27,8 +27,6 @@ const Router = createBrowserRouter([
     }
 ]);
 export default Router
-
-
 /*<Router>
       <Routes>
         <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
