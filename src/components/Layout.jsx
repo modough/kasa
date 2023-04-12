@@ -1,13 +1,30 @@
-import { Fragment } from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import { Fragment, useEffect, useState } from "react"
+import LoadingPage from '../pages/LoadingPage'
+
 
 function Layout({ children }) {
+    const [isLoading, setIsLoading] = useState(true)
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(!isLoading)
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [])
+
     return (
         <Fragment>
-            <Header />
-            {children}
-            <Footer />
+            {
+                isLoading ?
+                    <LoadingPage />
+                    :
+                    <Fragment>
+                        <Header />
+                        {children}
+                        <Footer />
+                    </Fragment>
+            }
         </Fragment>
     )
 }

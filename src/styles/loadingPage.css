@@ -1,0 +1,21 @@
+.loadingPage {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 48px;
+}
+.loadingBackground {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+.loadingPage img {
+  width: 300px;
+  margin: 200px;
+}

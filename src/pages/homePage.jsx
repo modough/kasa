@@ -2,7 +2,9 @@ import Banner from "../components/Banner"
 import Layout from "../components/Layout"
 import Cards from "../components/Cards"
 
+
 function Home() {
+
     return (
         <section className="homePage">
             <Layout>
