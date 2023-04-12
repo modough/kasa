@@ -1,7 +1,7 @@
 import Header from './Header'
 import Footer from './Footer'
 import { Fragment, useEffect, useState } from "react"
-import LoadingPage from '../pages/LoadingPage'
+import LoadingPage from './LoadingPage'
 
 
 function Layout({ children }) {
