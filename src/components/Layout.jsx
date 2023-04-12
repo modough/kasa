@@ -5,7 +5,7 @@ import LoadingPage from '../pages/LoadingPage'
 
 
 function Layout({ children }) {
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(!isLoading)
@@ -16,7 +16,7 @@ function Layout({ children }) {
     return (
         <Fragment>
             {
-                isLoading ?
+                !isLoading ?
                     <LoadingPage />
                     :
                     <Fragment>
