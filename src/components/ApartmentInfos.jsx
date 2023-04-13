@@ -1,7 +1,7 @@
 import '../styles/apartmentInfos.css';
 import CollapseCards from './CollapseCards';
 import { Fragment } from 'react';
-import Ratings from './ratings';
+import Ratings from './Ratings';
 import Host from './Host';
 import Infos from './Infos';
 

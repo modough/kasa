@@ -1,5 +1,5 @@
-import BannerAboutPage from "../components/bannerAboutPAge";
-import Collapse from "../components/collapse";
+import BannerAboutPage from "../components/BannerAboutPAge";
+import Collapse from "../components/Collapse";
 import Layout from "../components/Layout";
 
 function AboutPage() {
