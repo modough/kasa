@@ -1,4 +1,4 @@
-import BannerAboutPage from "../components/BannerAboutPAge";
+import BannerAboutPage from "../components/BannerAboutPage";
 import Collapse from "../components/Collapse";
 import Layout from "../components/Layout";
 
