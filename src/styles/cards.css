@@ -15,6 +15,7 @@
   border-radius: 10px;
   position: relative;
   cursor: pointer;
+  background: linear-gradient(180deg, #ff6060 0%, #00000080 100%);
 }
 .cards p {
   color: white;
