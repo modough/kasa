@@ -5,6 +5,7 @@
   align-items: center;
   padding: 0 100px;
 }
+
 .navLink.underline {
   text-decoration: underline;
   text-decoration-color: #ff6060;
@@ -19,6 +20,9 @@
   list-style: none;
   color: #ff6060;
   font-size: 24px;
+}
+.navigation p:hover {
+  filter: drop-shadow(1px 1px rgba(224, 147, 147, 0.43));
 }
 
 @media (width <= 1000px) {

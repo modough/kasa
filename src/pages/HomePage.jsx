@@ -10,8 +10,8 @@ function Home() {
     return (
         <section className="homePage">
             <Layout>
-                <Banner />
                 <Suspense fallback={<LoadingPage />}>
+                    <Banner />
                     <Cards />
                 </Suspense>
             </Layout>

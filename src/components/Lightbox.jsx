@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import '../styles/lightbox.css';
-import { Fragment, useState } from 'react';
+import { Fragment, Suspense, useState } from 'react';
+import LoadingPage from '../components/Loading'
 
 function Lightbox({ findApart }) {
     const images = findApart.pictures;
@@ -40,9 +41,12 @@ function Lightbox({ findApart }) {
     return (
         <section className="lightbox-container">
             <div className="lightbox">
-                <div className="lightbox-image">
-                    <img src={clicked} alt="lightbox image" tabIndex={0} aria-current="media de caroussel" />
-                </div>
+                <Suspense fallback={<LoadingPage />}>
+                    <div className="lightbox-image">
+                        <img src={clicked} alt="lightbox image" tabIndex={0} aria-current="media de caroussel" />
+                    </div>
+                </Suspense>
+
                 {
                     imageArrayLength > 1 ?
                         <Fragment>
