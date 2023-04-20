@@ -1,15 +1,19 @@
+import { lazy, Suspense } from 'react'
 import Banner from "../components/Banner"
 import Layout from "../components/Layout"
-import Cards from "../components/Cards"
+import LoadingPage from "../components/Loading"
+
 
 
 function Home() {
-
+    const Cards = lazy(() => import('../components/Cards.jsx'))
     return (
         <section className="homePage">
             <Layout>
                 <Banner />
-                <Cards />
+                <Suspense fallback={<LoadingPage />}>
+                    <Cards />
+                </Suspense>
             </Layout>
         </section>
     )

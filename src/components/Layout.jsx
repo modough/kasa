@@ -1,30 +1,18 @@
 import Header from './Header'
 import Footer from './Footer'
-import { Fragment, useEffect, useState } from "react"
-import LoadingPage from './Loading'
+import { Fragment } from 'react'
+
+
+
 
 
 function Layout({ children }) {
-    const [isLoading, setIsLoading] = useState(false)
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(!isLoading)
-        }, 900);
-        return () => clearTimeout(timer);
-    }, [])
 
     return (
         <Fragment>
-            {
-                !isLoading ?
-                    <LoadingPage />
-                    :
-                    <Fragment>
-                        <Header />
-                        {children}
-                        <Footer />
-                    </Fragment>
-            }
+            <Header />
+            {children}
+            <Footer />
         </Fragment>
     )
 }
